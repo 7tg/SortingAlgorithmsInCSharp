@@ -9,13 +9,16 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            RandomArray arr = new RandomArray(100);
+            int arraySize = 10000;
+            
+            RandomArray arr = new RandomArray(arraySize);
             arr.FillArrayRandom();
-            arr.PrintArray();
+
+            Console.WriteLine("Size of the shuffled array :"+arraySize);
             Console.WriteLine("Bubble Sort Took(miliseconds):"+BubbleSort.Sort(arr.Clone()));
             Console.WriteLine("Selection Sort Took(miliseconds):"+SelectionSort.Sort(arr.Clone()));
-            Console.WriteLine("Selection Sort Took(miliseconds):"+SelectionSort.Sort(arr.array));
-            arr.PrintArray();
+            Console.WriteLine("Insertion Sort Took(miliseconds):"+SelectionSort.Sort(arr.Clone()));
+
 
         }
 
