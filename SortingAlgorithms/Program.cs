@@ -17,7 +17,8 @@ namespace SortingAlgorithms
             Console.WriteLine("Size of the shuffled array :"+arraySize);
             Console.WriteLine("Bubble Sort Took(miliseconds):"+BubbleSort.Sort(arr.Clone()));
             Console.WriteLine("Selection Sort Took(miliseconds):"+SelectionSort.Sort(arr.Clone()));
-            Console.WriteLine("Insertion Sort Took(miliseconds):"+SelectionSort.Sort(arr.Clone()));
+            Console.WriteLine("Insertion Sort Took(miliseconds):"+InsertionSort.Sort(arr.Clone()));
+            Console.WriteLine("Shell Sort Took(miliseconds):"+ShellSort.Sort(arr.Clone()));
 
 
         }
