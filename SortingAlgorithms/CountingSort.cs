@@ -37,18 +37,21 @@ namespace SortingAlgorithms
         
         private static  void FindMinMaxValue(int[] array,out int min,out int max)
         {
-            min = 0;
             max = 0;
+            foreach (var i in array)
+            {
+                if (i > max)
+                {
+                    max = i;
+                }
+            }
+
+            min = max;
             foreach (var i in array)
             {
                 if (i < min)
                 {
                     min = i;
-                }
-
-                if (i > max)
-                {
-                    max = i;
                 }
             }
         }
