@@ -9,7 +9,7 @@ namespace SortingAlgorithms
     {
         static void Main(string[] args)
         {
-            int arraySize = 10000;
+            int arraySize = 100000;
             
             RandomArray arr = new RandomArray(arraySize);
             arr.FillArrayRandom();
@@ -25,6 +25,7 @@ namespace SortingAlgorithms
             Console.WriteLine("Shell Sort Took(miliseconds):"+ShellSort.Sort(arr.Clone()));
             Console.WriteLine("Merge Sort Took(miliseconds):"+MergeSort.Sort(arr.Clone()));
             Console.WriteLine("Quick Sort Took(miliseconds):"+QuickSort.Sort(arr.Clone()));
+            Console.WriteLine("Counting Sort Took(miliseconds):"+CountingSort.Sort(arr.Clone()));
 
 
         }
